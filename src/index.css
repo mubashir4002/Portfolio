@@ -805,6 +805,31 @@ footer p
   letter-spacing: 2px;
 
 }
+@media (max-width:390px)
+{
+  .opt p
+{
+  letter-spacing: 1px;
+ 
+  font-size: 12px;
+  width: 350px;
+  
+  line-height: 26px;
+}
+@media (max-width:390px)
+{
+  .opt p
+{
+  letter-spacing: 1px;
+  
+  font-size: 9px;
+  width: 300px;
+  
+  line-height: 26px;
+}
+}
+
+}
 /* @media  (max-width: 1024px) {
   .Container {
     height: auto;
