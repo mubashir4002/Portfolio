@@ -9,8 +9,8 @@ const Service = () => {
     <h2>Our Services</h2>
   </div>
 
-
   <div className="Service-Wrapper">
+
     {SERVICES.map((item,index)=>(
       <div key={index} className="card">
       <h5>{item.title}</h5>

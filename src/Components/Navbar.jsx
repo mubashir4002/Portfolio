@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../Assets/Black and White Circle Business Logo (Website) (2).png';
 
 const Navbar = () => {
@@ -17,9 +18,9 @@ const Navbar = () => {
         
         <div className="tabs">
           {['Home', 'About', 'Service', 'Portfolio', 'Contact'].map((item, index) => (
-            <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`} key={index}>
+            <Link to={`/${item.toLowerCase().replace(/\s+/g, '')}`} key={index}>
               {item}
-            </a>
+            </Link>
           ))}
         </div>
         
@@ -28,10 +29,10 @@ const Navbar = () => {
 
       {open && (
         <div className='small-Menu'>
-          {['Home', 'About', 'Services', 'Portfolio', 'Contact Us'].map((item, index) => (
-            <a href={`#${item.toLowerCase().replace(/\s+/g, '')}`} key={index}>
+          {['Home', 'About', 'Service', 'Portfolio', 'Contact'].map((item, index) => (
+            <Link to={`/${item.toLowerCase().replace(/\s+/g, '')}`} key={index} >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
       )}
